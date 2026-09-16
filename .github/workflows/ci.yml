@@ -42,8 +42,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev]"
 
-      - name: Run test suite
+      - name: Prepare short temporary path (Windows)
+        if: runner.os == 'Windows'
+        run: New-Item -ItemType Directory -Path C:\t -Force | Out-Null
+
+      - name: Run test suite (Ubuntu)
+        if: runner.os == 'Linux'
         env:
           QT_QPA_PLATFORM: offscreen
+        run: |
+          pytest -v
+
+      - name: Run test suite (Windows)
+        if: runner.os == 'Windows'
+        env:
+          QT_QPA_PLATFORM: offscreen
+          TEMP: C:\t
+          TMP: C:\t
         run: |
           pytest -v
