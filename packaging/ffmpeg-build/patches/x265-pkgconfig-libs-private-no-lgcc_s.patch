@@ -1,0 +1,11 @@
+--- a/source/CMakeLists.txt
++++ b/source/CMakeLists.txt
+@@ -703,7 +703,7 @@
+     if(PLIBLIST)
+         # blacklist of libraries that should not be in Libs.private
+         list(REMOVE_ITEM PLIBLIST "-lc" "-lpthread" "-lmingwex" "-lmingwthrd"
+-            "-lmingw32" "-lmoldname" "-lmsvcrt" "-ladvapi32" "-lshell32"
++            "-lmingw32" "-lmoldname" "-lmsvcrt" "-ladvapi32" "-lshell32" "-lgcc_s"
+             "-luser32" "-lkernel32")
+         string(REPLACE ";" " " PRIVATE_LIBS "${PLIBLIST}")
+     else()

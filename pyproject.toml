@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "free-simple-video-converter"
+version = "1.0.0"
+description = "Simple GPU-accelerated batch video converter powered by FFmpeg"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+keywords = ["video", "ffmpeg", "converter", "pyside6"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: Qt",
+    "Topic :: Multimedia :: Video :: Conversion",
+]
+dependencies = [
+    "PySide6>=6.6.0",
+]
+
+[project.gui-scripts]
+free-simple-video-converter = "video_converter.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-qt>=4.4.0",
+    "pyinstaller>=6.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

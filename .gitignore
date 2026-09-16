@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.spec
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & caches
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.worktrees/
+
+# Local binaries and configs
+bin/*.exe
+config.json
+
+# FFmpeg build artifacts
+packaging/ffmpeg-build/artifacts/
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.zip
+*.7z
+*.o
+*.a
+*.obj
+*.lib
+
+# Temporary test / media artifacts
+*.part.mp4
+test_output_*.mp4
+temp_test_*

@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "name": "ffmpeg",
+      "license": "GPL-3.0-or-later",
+      "acquisition_type": "official_release",
+      "version": "6.1.1",
+      "source_commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
+      "artifact_url": "https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
+      "verification": {
+        "type": "pgp_signature",
+        "signature_url": "https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz.asc",
+        "signer": "FCF986EA15E6E293A5644F10B4322F04D67658D8"
+      }
+    },
+    {
+      "name": "x264",
+      "license": "GPL-2.0-or-later",
+      "acquisition_type": "commit_archive",
+      "commit": "c24e06c2e184345ceb33eb20a15d1024d9fd3497",
+      "git_remote_url": "https://code.videolan.org/videolan/x264.git"
+    },
+    {
+      "name": "x265",
+      "license": "GPL-2.0-or-later",
+      "acquisition_type": "commit_archive",
+      "commit": "f0c1022b6be121a753ff02853fbe33da71988656",
+      "git_remote_url": "https://bitbucket.org/multicoreware/x265_git.git"
+    },
+    {
+      "name": "libvpx",
+      "license": "BSD-3-Clause",
+      "acquisition_type": "commit_archive",
+      "commit": "10b9492dcf05b652e2e4b370e205bd605d421972",
+      "git_remote_url": "https://chromium.googlesource.com/webm/libvpx"
+    },
+    {
+      "name": "svt-av1",
+      "license": "BSD-3-Clause-Clear",
+      "acquisition_type": "commit_archive",
+      "commit": "59645eea34e2815b627b8293aa3af254eddd0d69",
+      "git_remote_url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git"
+    },
+    {
+      "name": "libopus",
+      "license": "BSD-3-Clause",
+      "acquisition_type": "official_release",
+      "version": "1.4",
+      "artifact_url": "https://github.com/xiph/opus/releases/download/v1.4/opus-1.4.tar.gz",
+      "verification": {
+        "type": "published_checksum",
+        "algorithm": "sha256",
+        "expected_digest": "c9b32b4253be5ae63d1ff16eea06b94b5f0f2951b7a02aceef58e3a3ce49c51f"
+      }
+    },
+    {
+      "name": "nv-codec-headers",
+      "license": "MIT",
+      "acquisition_type": "commit_archive",
+      "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+      "git_remote_url": "https://github.com/FFmpeg/nv-codec-headers.git"
+    },
+    {
+      "name": "amf",
+      "license": "MIT",
+      "acquisition_type": "commit_archive",
+      "commit": "c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+      "git_remote_url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git"
+    },
+    {
+      "name": "libvpl",
+      "license": "MIT",
+      "acquisition_type": "commit_archive",
+      "commit": "11a9bbda5b22ac1c544da59b4007bb57f737b487",
+      "git_remote_url": "https://github.com/intel/libvpl.git"
+    }
+  ],
+  "toolchain": {
+    "environment": "UCRT64",
+    "target": "x86_64-w64-mingw32"
+  },
+  "msys2": {
+    "requested_packages": [
+      "mingw-w64-ucrt-x86_64-gcc",
+      "mingw-w64-ucrt-x86_64-nasm",
+      "mingw-w64-ucrt-x86_64-ninja",
+      "mingw-w64-ucrt-x86_64-cmake",
+      "mingw-w64-ucrt-x86_64-meson",
+      "mingw-w64-ucrt-x86_64-pkgconf",
+      "make",
+      "diffutils"
+    ],
+    "immutable_retention": {
+      "required": true,
+      "location_kind": "project-controlled",
+      "uri_prefix": "project://ffmpeg-build/"
+    },
+    "offline_install": {
+      "command": "pacman -U",
+      "forbidden_commands": [
+        "pacman -S",
+        "pacman -Sy",
+        "pacman -Syu"
+      ]
+    }
+  },
+  "configure": {
+    "flags": [
+      "--target-os=mingw32",
+      "--arch=x86_64",
+      "--enable-gpl",
+      "--enable-libx264",
+      "--enable-libx265",
+      "--enable-libvpx",
+      "--enable-libsvtav1",
+      "--enable-libopus",
+      "--enable-nvenc",
+      "--enable-libvpl",
+      "--enable-amf",
+      "--disable-ffplay",
+      "--disable-doc"
+    ]
+  },
+  "patches": [
+    {
+      "name": "x265-cmake-4.4-compatibility",
+      "path": "packaging/ffmpeg-build/patches/x265-cmake-4.4-compatibility.patch"
+    },
+    {
+      "name": "x265-pkgconfig-libs-private-no-lgcc_s",
+      "path": "packaging/ffmpeg-build/patches/x265-pkgconfig-libs-private-no-lgcc_s.patch"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "ffmpeg",
+      "path": "bin/ffmpeg.exe",
+      "version_prefix": "ffmpeg version 6.1.1"
+    },
+    {
+      "name": "ffprobe",
+      "path": "bin/ffprobe.exe",
+      "version_prefix": "ffprobe version 6.1.1"
+    }
+  ]
+}

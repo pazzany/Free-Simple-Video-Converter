@@ -1,0 +1,1572 @@
+{
+  "acquisition_manifest_sha256": "cac496048633fd65633950358918f1c9c99af400a5666350ada3d471dba11ef1",
+  "configure": {
+    "flags": [
+      "--target-os=mingw32",
+      "--arch=x86_64",
+      "--enable-gpl",
+      "--enable-libx264",
+      "--enable-libx265",
+      "--enable-libvpx",
+      "--enable-libsvtav1",
+      "--enable-libopus",
+      "--enable-nvenc",
+      "--enable-libvpl",
+      "--enable-amf",
+      "--disable-ffplay",
+      "--disable-doc"
+    ]
+  },
+  "msys2": {
+    "databases": [
+      {
+        "name": "clang64.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/clang64.db",
+        "sha256": "437eb08307da7c42d55521aa6e75ad0f80255676812e7e3e3e36f0a78e1d28c7",
+        "signature": {
+          "filename": "clang64.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/clang64.db.sig",
+          "sha256": "bcfe9e4946e0ac3700ab2b3d1bb0ef860f45edf8395c9334caf84592754b98ea",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "bcfe9e4946e0ac3700ab2b3d1bb0ef860f45edf8395c9334caf84592754b98ea"
+      },
+      {
+        "name": "clangarm64.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/clangarm64.db",
+        "sha256": "30ae099492ab642a6fe880f2999a71d79658867100671c2dd9a6a9dce60ed517",
+        "signature": {
+          "filename": "clangarm64.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/clangarm64.db.sig",
+          "sha256": "75702e27d739c66f0e3997878c4fa5329950d327b6b7d5efaf9450c44a344edb",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "75702e27d739c66f0e3997878c4fa5329950d327b6b7d5efaf9450c44a344edb"
+      },
+      {
+        "name": "mingw32.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/mingw32.db",
+        "sha256": "2b4da0d2447b47b49535281aa6b6fb23f499ae501f7c8021f3a7556c7f8a6305",
+        "signature": {
+          "filename": "mingw32.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/mingw32.db.sig",
+          "sha256": "b90aae8f7c02411f4ca3a09b81131b9713fb9cc00ef209c9a5b1315460849816",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "b90aae8f7c02411f4ca3a09b81131b9713fb9cc00ef209c9a5b1315460849816"
+      },
+      {
+        "name": "mingw64.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/mingw64.db",
+        "sha256": "5fbd0e78cb3bf8d618189a62377003484d410368627379b9baa950bd73166b27",
+        "signature": {
+          "filename": "mingw64.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/mingw64.db.sig",
+          "sha256": "c3f26d13ad086fa82ea7575e8b2af9387d1a8d8563f90b604d5f76e8893bb53a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "c3f26d13ad086fa82ea7575e8b2af9387d1a8d8563f90b604d5f76e8893bb53a"
+      },
+      {
+        "name": "msys.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/msys.db",
+        "sha256": "70581e8bf06fceb4aafbcb77acfec607ae011ac45c7d5bd6f606e2aa7b062357",
+        "signature": {
+          "filename": "msys.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/msys.db.sig",
+          "sha256": "7f875137f6917b19a2ba9137c7f75b9c95b6f322eeb0305d5aa166ba8c4d4bb2",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7f875137f6917b19a2ba9137c7f75b9c95b6f322eeb0305d5aa166ba8c4d4bb2"
+      },
+      {
+        "name": "ucrt64.db",
+        "retention_uri": "project://ffmpeg-build/msys2/databases/ucrt64.db",
+        "sha256": "0378c9f980f36a959b1c4f0bfb60d41048f427ea987a617c804ec945b5ac2a5d",
+        "signature": {
+          "filename": "ucrt64.db.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/signatures/ucrt64.db.sig",
+          "sha256": "1b02fa4fabced2517dcb02ababdf3adbb699dd99d77c30b49ac60b313e8bf1a0",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "1b02fa4fabced2517dcb02ababdf3adbb699dd99d77c30b49ac60b313e8bf1a0"
+      }
+    ],
+    "installer": {
+      "retention_uri": "project://ffmpeg-build/msys2/installer/msys2-x86_64-20260611.exe",
+      "sha256": "3150d7d9aa5dedd900a7f52300d4d918271e3a8fc47de94848818fd5a430e6b0",
+      "signature": {
+        "filename": "msys2-x86_64-20260611.exe.sig",
+        "retention_uri": "project://ffmpeg-build/msys2/installer/msys2-x86_64-20260611.exe.sig",
+        "sha256": "fae4b26ae025fa41946f9f36011b04a6c7e2825683e5fa0262495ec9367a12fa",
+        "signer": "0EBF782C5D53F7E5FB02A66746BD761F7A49B0EC",
+        "verified": true,
+        "verifier": "gpg"
+      },
+      "signature_sha256": "fae4b26ae025fa41946f9f36011b04a6c7e2825683e5fa0262495ec9367a12fa",
+      "url": "https://github.com/msys2/msys2-installer/releases/download/2026-06-11/msys2-x86_64-20260611.exe"
+    },
+    "packages": [
+      {
+        "dependencies": [],
+        "filename": "diffutils-3.12-1-x86_64.pkg.tar.zst",
+        "name": "diffutils",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/diffutils-3.12-1-x86_64.pkg.tar.zst",
+        "sha256": "7902c8ce3d4dd69a0f5e98dc9d5c83c17b23314ba486169db57ef6e2835ce3b6",
+        "signature": {
+          "filename": "diffutils-3.12-1-x86_64.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/diffutils-3.12-1-x86_64.pkg.tar.zst.sig",
+          "sha256": "f25457caac4b77e5341e8fd02a53e696a023024ed398992eec199a43fd26c811",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "f25457caac4b77e5341e8fd02a53e696a023024ed398992eec199a43fd26c811",
+        "version": "3.12-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "make-4.4.1-3-x86_64.pkg.tar.zst",
+        "name": "make",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/make-4.4.1-3-x86_64.pkg.tar.zst",
+        "sha256": "af0bdba17f06fe037f0194069adaa31a8fe45f1a11381501896aea1fae37bd5d",
+        "signature": {
+          "filename": "make-4.4.1-3-x86_64.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/make-4.4.1-3-x86_64.pkg.tar.zst.sig",
+          "sha256": "7f53c96aeb1a29d9917e2b00e9f709fbdc5b0458e6535e88b1fed69365191265",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7f53c96aeb1a29d9917e2b00e9f709fbdc5b0458e6535e88b1fed69365191265",
+        "version": "4.4.1-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gettext-runtime",
+          "mingw-w64-ucrt-x86_64-libwinpthread",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-zstd"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-binutils-2.47-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-binutils",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-binutils-2.47-3-any.pkg.tar.zst",
+        "sha256": "ba98af202fe71e0884bb51daf78ce10bd8a51c69528c700dcf5855e6ece06dd3",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-binutils-2.47-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-binutils-2.47-3-any.pkg.tar.zst.sig",
+          "sha256": "cbf255869ea862b3a3de61a83916abf2a92a2c61520ea09f94eb3b13ae8e5bdf",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "cbf255869ea862b3a3de61a83916abf2a92a2c61520ea09f94eb3b13ae8e5bdf",
+        "version": "2.47-3"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-brotli-1.2.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-brotli",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-brotli-1.2.0-1-any.pkg.tar.zst",
+        "sha256": "9cc89665496ea504751476eafba15c71c554aaf3004babc2004f7c07ffd60514",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-brotli-1.2.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-brotli-1.2.0-1-any.pkg.tar.zst.sig",
+          "sha256": "7240b29d455849753ee40a1922c46150737ae423e889296a00e8fc3a89fbec5b",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7240b29d455849753ee40a1922c46150737ae423e889296a00e8fc3a89fbec5b",
+        "version": "1.2.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-bzip2-1.0.8-4-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-bzip2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-bzip2-1.0.8-4-any.pkg.tar.zst",
+        "sha256": "f03a2174034ddd2d96cecd34f617c5f8e2ef86c812b8d2bb3b8875257f2c8bfa",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-bzip2-1.0.8-4-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-bzip2-1.0.8-4-any.pkg.tar.zst.sig",
+          "sha256": "fa2198d8b839edad658a38a364a90036439ccade817f450085be2a65c0f7fe5b",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "fa2198d8b839edad658a38a364a90036439ccade817f450085be2a65c0f7fe5b",
+        "version": "1.0.8-4"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-c-ares-1.34.8-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-c-ares",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-c-ares-1.34.8-1-any.pkg.tar.zst",
+        "sha256": "2313d531bc9dc7aae6be3ce0f8ace516bb04191c4f3f62c78c7dfd246d2a9ba6",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-c-ares-1.34.8-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-c-ares-1.34.8-1-any.pkg.tar.zst.sig",
+          "sha256": "dcebb293ae8ed2f47cce9d67d6df6fde772c479e2d6af79ac4b07238aff7d242",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "dcebb293ae8ed2f47cce9d67d6df6fde772c479e2d6af79ac4b07238aff7d242",
+        "version": "1.34.8-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-p11-kit"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-ca-certificates-20260816-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-ca-certificates",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ca-certificates-20260816-1-any.pkg.tar.zst",
+        "sha256": "123fac39b85ac36364d5ff9c1411cb448f9581fd12940af83adcd12a8eab9f55",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-ca-certificates-20260816-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ca-certificates-20260816-1-any.pkg.tar.zst.sig",
+          "sha256": "831130af173062a0d94a35399dc4d31dcd72289a5dbbffff23e924c1cd6eae51",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "831130af173062a0d94a35399dc4d31dcd72289a5dbbffff23e924c1cd6eae51",
+        "version": "20260816-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-cppdap",
+          "mingw-w64-ucrt-x86_64-curl",
+          "mingw-w64-ucrt-x86_64-expat",
+          "mingw-w64-ucrt-x86_64-jsoncpp",
+          "mingw-w64-ucrt-x86_64-libarchive",
+          "mingw-w64-ucrt-x86_64-libuv",
+          "mingw-w64-ucrt-x86_64-ninja",
+          "mingw-w64-ucrt-x86_64-pkgconf",
+          "mingw-w64-ucrt-x86_64-rhash",
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-cmake-4.4.2-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-cmake",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-cmake-4.4.2-2-any.pkg.tar.zst",
+        "sha256": "a48ab920f631c58d332de3a3bfc19e1ece9a790d7923d6ddaafa0d0870e43768",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-cmake-4.4.2-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-cmake-4.4.2-2-any.pkg.tar.zst.sig",
+          "sha256": "b22d11402f56ae9365ce388fd2f72582888ac59c7b9dc304d42a155a66db5ccb",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "b22d11402f56ae9365ce388fd2f72582888ac59c7b9dc304d42a155a66db5ccb",
+        "version": "4.4.2-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-cppdap-1.65.r11.g6464cd7-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-cppdap",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-cppdap-1.65.r11.g6464cd7-1-any.pkg.tar.zst",
+        "sha256": "9dbf7b779531de1d47374c69421b0eb5f6152aea61dc725b012a053c96a213d8",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-cppdap-1.65.r11.g6464cd7-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-cppdap-1.65.r11.g6464cd7-1-any.pkg.tar.zst.sig",
+          "sha256": "20b3932627b7532deca92558085a56764eb53aa1615e937762d5410d32987384",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "20b3932627b7532deca92558085a56764eb53aa1615e937762d5410d32987384",
+        "version": "1.65.r11.g6464cd7-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-headers"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-crt-14.0.0.r353.g6df76fa52-4-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-crt",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-crt-14.0.0.r353.g6df76fa52-4-any.pkg.tar.zst",
+        "sha256": "7052f930a137104483280d5fd557a026df94f78179eaf1df869e7e712123e891",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-crt-14.0.0.r353.g6df76fa52-4-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-crt-14.0.0.r353.g6df76fa52-4-any.pkg.tar.zst.sig",
+          "sha256": "fd98105e1cefedd6e121c746f661684bea4ccb4acd9411a4968d4a764b8c9fb9",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "fd98105e1cefedd6e121c746f661684bea4ccb4acd9411a4968d4a764b8c9fb9",
+        "version": "14.0.0.r353.g6df76fa52-4"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-c-ares",
+          "mingw-w64-ucrt-x86_64-brotli",
+          "mingw-w64-ucrt-x86_64-libidn2",
+          "mingw-w64-ucrt-x86_64-libpsl",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-zstd",
+          "mingw-w64-ucrt-x86_64-ca-certificates",
+          "mingw-w64-ucrt-x86_64-libssh2",
+          "mingw-w64-ucrt-x86_64-openssl",
+          "mingw-w64-ucrt-x86_64-nghttp2",
+          "mingw-w64-ucrt-x86_64-ngtcp2",
+          "mingw-w64-ucrt-x86_64-nghttp3"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-curl-8.22.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-curl",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-curl-8.22.0-1-any.pkg.tar.zst",
+        "sha256": "68bbc1420fde3556a05d6b38017cd1b807b9cb62b6a3c74ced41626af7fa9603",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-curl-8.22.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-curl-8.22.0-1-any.pkg.tar.zst.sig",
+          "sha256": "3545114c816ef161b8b6fcbc37941e1aac2cfe0a211bb8ac73a8507fa2be5933",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "3545114c816ef161b8b6fcbc37941e1aac2cfe0a211bb8ac73a8507fa2be5933",
+        "version": "8.22.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-expat-2.8.4-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-expat",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-expat-2.8.4-2-any.pkg.tar.zst",
+        "sha256": "d7464e17da7be080847c6115b332318174116e7e614e12acd76b490be01a6844",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-expat-2.8.4-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-expat-2.8.4-2-any.pkg.tar.zst.sig",
+          "sha256": "32e0186b2c00427b1472f8bf3ce5858275f7bda379d48bdcf398714a30709910",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "32e0186b2c00427b1472f8bf3ce5858275f7bda379d48bdcf398714a30709910",
+        "version": "2.8.4-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-binutils",
+          "mingw-w64-ucrt-x86_64-crt",
+          "mingw-w64-ucrt-x86_64-headers",
+          "mingw-w64-ucrt-x86_64-isl",
+          "mingw-w64-ucrt-x86_64-gmp",
+          "mingw-w64-ucrt-x86_64-mpfr",
+          "mingw-w64-ucrt-x86_64-mpc",
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-windows-default-manifest",
+          "mingw-w64-ucrt-x86_64-winpthreads",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-zstd"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-gcc-16.2.0-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-gcc",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gcc-16.2.0-3-any.pkg.tar.zst",
+        "sha256": "1cd86e5817f6e0d7310d7cb2bb91f4a55e1256cb4ce580a0c5f2a74e013d144d",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-gcc-16.2.0-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gcc-16.2.0-3-any.pkg.tar.zst.sig",
+          "sha256": "3164f0b78bf142a11c62a95886ce37412ccdbb3c3fb3f5c6d97ecfb4f41c254a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "3164f0b78bf142a11c62a95886ce37412ccdbb3c3fb3f5c6d97ecfb4f41c254a",
+        "version": "16.2.0-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-libwinpthread",
+          "mingw-w64-ucrt-x86_64-tzdata"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-gcc-libs",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst",
+        "sha256": "5763fabf86fa13a4449ee765006d3446384ed66af7bf827459710eb777e0b11c",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst.sig",
+          "sha256": "1126ddc1848e2b6b878abd1902fcb6bb01e2b869d475e30ba0bb78c96be49392",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "1126ddc1848e2b6b878abd1902fcb6bb01e2b869d475e30ba0bb78c96be49392",
+        "version": "16.2.0-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-libiconv"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst",
+        "sha256": "ba693dda4ac375af76ce481ff3a6e7481286546cc7dc6d56c7021dae34084157",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst.sig",
+          "sha256": "4754e870d55cacb5e7e3707313b68edb29d2598cc7a1ee399c74715007f38c4d",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "4754e870d55cacb5e7e3707313b68edb29d2598cc7a1ee399c74715007f38c4d",
+        "version": "1.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-gmp",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+        "sha256": "e82a75968a556484a50084578238a84eb60fb93e34986fd6695c537975bd39ea",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst.sig",
+          "sha256": "99d2b95269ef099bdc8f3dd0e3db8a9171346e4076bfe0c0c58855d7b97220ff",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "99d2b95269ef099bdc8f3dd0e3db8a9171346e4076bfe0c0c58855d7b97220ff",
+        "version": "6.3.0-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-brotli",
+          "mingw-w64-ucrt-x86_64-gettext-runtime",
+          "mingw-w64-ucrt-x86_64-gmp",
+          "mingw-w64-ucrt-x86_64-libidn2",
+          "mingw-w64-ucrt-x86_64-libtasn1",
+          "mingw-w64-ucrt-x86_64-libunistring",
+          "mingw-w64-ucrt-x86_64-libwinpthread",
+          "mingw-w64-ucrt-x86_64-nettle",
+          "mingw-w64-ucrt-x86_64-p11-kit",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-zstd"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-gnutls-3.8.13-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-gnutls",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gnutls-3.8.13-3-any.pkg.tar.zst",
+        "sha256": "303da3babd11f545fcac647439298e8559951ce6a1086666faf8ad2a1f708be6",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-gnutls-3.8.13-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-gnutls-3.8.13-3-any.pkg.tar.zst.sig",
+          "sha256": "7c954bd756006c1f618282b906f12d808fa27547447a3764e1cc5fdf680a0103",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7c954bd756006c1f618282b906f12d808fa27547447a3764e1cc5fdf680a0103",
+        "version": "3.8.13-3"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-headers-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-headers",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-headers-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "sha256": "b66bc992ff1340f6d7eff1539b4243b01d937f05e26bb44879650171a2fd3c1a",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-headers-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-headers-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "sha256": "a91fcbe95f023ffdbd51d13b9d99cf3efd0b08d7691137b0a9eff7809c7902a6",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "a91fcbe95f023ffdbd51d13b9d99cf3efd0b08d7691137b0a9eff7809c7902a6",
+        "version": "14.0.0.r353.g6df76fa52-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gmp"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-isl",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst",
+        "sha256": "8594e01a253d5a72646c586cf5a1626c1b1c2be7c30060fe67abd9bebe3fe223",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst.sig",
+          "sha256": "7154a96c9936f5d00504ae012c74a82cd15f094d925e0cf1a17b7a2bf1be11a6",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7154a96c9936f5d00504ae012c74a82cd15f094d925e0cf1a17b7a2bf1be11a6",
+        "version": "0.28-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-jsoncpp-1.9.8-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-jsoncpp",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-jsoncpp-1.9.8-1-any.pkg.tar.zst",
+        "sha256": "c8bf6af2e6d7972f748f738ba8e510777437dcfd50846c378bc6e0990ce7ce2d",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-jsoncpp-1.9.8-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-jsoncpp-1.9.8-1-any.pkg.tar.zst.sig",
+          "sha256": "7e6e18cc961e25b9b8a9e0a1a829fc605c7948f5f9f0b8c3eec79fc4f072d113",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "7e6e18cc961e25b9b8a9e0a1a829fc605c7948f5f9f0b8c3eec79fc4f072d113",
+        "version": "1.9.8-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-bzip2",
+          "mingw-w64-ucrt-x86_64-expat",
+          "mingw-w64-ucrt-x86_64-libb2",
+          "mingw-w64-ucrt-x86_64-libiconv",
+          "mingw-w64-ucrt-x86_64-lz4",
+          "mingw-w64-ucrt-x86_64-openssl",
+          "mingw-w64-ucrt-x86_64-pcre2",
+          "mingw-w64-ucrt-x86_64-xz",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-zstd"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libarchive-3.8.9-5-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libarchive",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libarchive-3.8.9-5-any.pkg.tar.zst",
+        "sha256": "c103f1224dcdf68c6ffe8559fa7f574b22063f57702ad58408c87a6dedf20ceb",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libarchive-3.8.9-5-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libarchive-3.8.9-5-any.pkg.tar.zst.sig",
+          "sha256": "0aec08d6f88e4a0361c169b849ca26813a83fb9cde4707d3ce3ab45062202647",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "0aec08d6f88e4a0361c169b849ca26813a83fb9cde4707d3ce3ab45062202647",
+        "version": "3.8.9-5"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libb2-0.98.1-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libb2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libb2-0.98.1-3-any.pkg.tar.zst",
+        "sha256": "dfb554635119d3c46adb00c9d0c589bb38d1cb0781b10ecf31de07ce388bd0c0",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libb2-0.98.1-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libb2-0.98.1-3-any.pkg.tar.zst.sig",
+          "sha256": "fc45f4e1186cc9be0f83faa6310e6f22424e5eb68da8f38247d8c978b0818790",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "fc45f4e1186cc9be0f83faa6310e6f22424e5eb68da8f38247d8c978b0818790",
+        "version": "0.98.1-3"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-libffi-3.8.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libffi",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libffi-3.8.0-1-any.pkg.tar.zst",
+        "sha256": "99ad12f4ecfa00a889ef9c5c0188592368a5bac109d0c508ce4e04f29ea95a76",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libffi-3.8.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libffi-3.8.0-1-any.pkg.tar.zst.sig",
+          "sha256": "a49e13cb3d5030cfcf47b3dc911f4a0937c1e2fb20ee9ec3244a8732047193a8",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "a49e13cb3d5030cfcf47b3dc911f4a0937c1e2fb20ee9ec3244a8732047193a8",
+        "version": "3.8.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libiconv",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst",
+        "sha256": "9a500f38c2b91808741c62fae746b3e9110b33a1ecf5c30fa0c66dbedddf7e16",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst.sig",
+          "sha256": "e18abd753c47dbed046cf619f0855c2bc05ae17a7f3eabba8a2e841478a4f6b2",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "e18abd753c47dbed046cf619f0855c2bc05ae17a7f3eabba8a2e841478a4f6b2",
+        "version": "1.19-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gettext-runtime",
+          "mingw-w64-ucrt-x86_64-libiconv",
+          "mingw-w64-ucrt-x86_64-libunistring"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libidn2-2.3.8-4-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libidn2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libidn2-2.3.8-4-any.pkg.tar.zst",
+        "sha256": "d5f4b5e9d99ff7b2a986d1dc0c73da2bcd93ba68462be7b1debbd6ef76371f57",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libidn2-2.3.8-4-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libidn2-2.3.8-4-any.pkg.tar.zst.sig",
+          "sha256": "46c5d4192a6494ea11a347d3e2ec265e7ff9024d309c8fe860820cb79708fd76",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "46c5d4192a6494ea11a347d3e2ec265e7ff9024d309c8fe860820cb79708fd76",
+        "version": "2.3.8-4"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-libiconv",
+          "mingw-w64-ucrt-x86_64-libidn2",
+          "mingw-w64-ucrt-x86_64-libunistring",
+          "mingw-w64-ucrt-x86_64-gettext-runtime"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libpsl-0.21.5-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libpsl",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libpsl-0.21.5-3-any.pkg.tar.zst",
+        "sha256": "d96e0bb50ac3f8b6e44a39ea8de8d186f7b08f6938b0676eb69a7ba1f127bcf4",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libpsl-0.21.5-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libpsl-0.21.5-3-any.pkg.tar.zst.sig",
+          "sha256": "96c1b37b792714e6d4b3a8981b49c851b1f0a47227603eca1e63c7d3e971241b",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "96c1b37b792714e6d4b3a8981b49c851b1f0a47227603eca1e63c7d3e971241b",
+        "version": "0.21.5-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-openssl",
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libssh2-1.11.1-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libssh2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libssh2-1.11.1-2-any.pkg.tar.zst",
+        "sha256": "0e91316dfa4979dcabbfa9e71528ec9882ece619ce549cb25312089b4754fa65",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libssh2-1.11.1-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libssh2-1.11.1-2-any.pkg.tar.zst.sig",
+          "sha256": "900621b47c451e8d4607ecbdb34b7d963a79c927a5bb9b267533bee92fe48d29",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "900621b47c451e8d4607ecbdb34b7d963a79c927a5bb9b267533bee92fe48d29",
+        "version": "1.11.1-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-libtre"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libsystre-1.0.2-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libsystre",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libsystre-1.0.2-2-any.pkg.tar.zst",
+        "sha256": "f5fe38a77c3a0bccdfd33191746702894bf36391bf0eb55ba7a8cf0b781693a7",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libsystre-1.0.2-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libsystre-1.0.2-2-any.pkg.tar.zst.sig",
+          "sha256": "6d9d431867d43f66c66f151b985e727c277eeeedf25d32a58d0813023cc93952",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "6d9d431867d43f66c66f151b985e727c277eeeedf25d32a58d0813023cc93952",
+        "version": "1.0.2-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libtasn1-4.21.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libtasn1",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libtasn1-4.21.0-1-any.pkg.tar.zst",
+        "sha256": "d098b27834c3b25142b6f5aa9a0ca5731a8e4334c232786406cb149dd8bde2ba",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libtasn1-4.21.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libtasn1-4.21.0-1-any.pkg.tar.zst.sig",
+          "sha256": "9816772585dd35c1b2e272e1d868be44b4c51d82116f403b66525ef02ff79346",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "9816772585dd35c1b2e272e1d868be44b4c51d82116f403b66525ef02ff79346",
+        "version": "4.21.0-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gettext-runtime"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libtre-0.9.0-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libtre",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libtre-0.9.0-2-any.pkg.tar.zst",
+        "sha256": "d50f22545c50d7c0cd584474bba83f0c7a2cd8aab1aed1ad6c1f9c6452f3c4fc",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libtre-0.9.0-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libtre-0.9.0-2-any.pkg.tar.zst.sig",
+          "sha256": "35f28b414e9c1b0ee8c30d0736c0914a17c691317a358b3f9db62b0041bc8e9a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "35f28b414e9c1b0ee8c30d0736c0914a17c691317a358b3f9db62b0041bc8e9a",
+        "version": "0.9.0-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-libiconv"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-libunistring-1.4.2-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libunistring",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libunistring-1.4.2-1-any.pkg.tar.zst",
+        "sha256": "e784273da19bbdcc91cbb510b5e27c3ac021b026140734eefcce5ccbd878bd97",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libunistring-1.4.2-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libunistring-1.4.2-1-any.pkg.tar.zst.sig",
+          "sha256": "3c900f4bbd203f5cc3af9e910e1848bfcb3680ea04b89f223bbab7fb4414c38a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "3c900f4bbd203f5cc3af9e910e1848bfcb3680ea04b89f223bbab7fb4414c38a",
+        "version": "1.4.2-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-libuv-1.52.1-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libuv",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libuv-1.52.1-1-any.pkg.tar.zst",
+        "sha256": "6ffe9b7223dfb78d9a116e39369d131b4937e1948d8560d73ad682d1b3255f9d",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libuv-1.52.1-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libuv-1.52.1-1-any.pkg.tar.zst.sig",
+          "sha256": "26ff6f18fa862e40aac968411b3445e8f753dddf48ea12228386fe2a5c4d3cd8",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "26ff6f18fa862e40aac968411b3445e8f753dddf48ea12228386fe2a5c4d3cd8",
+        "version": "1.52.1-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "sha256": "ec1a46e63d424a90992a14c0996c0b5bb17370af6044380b590d05f725eeb43f",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "sha256": "1c69f824bd397cf9d802cda330f4404c3271bdac74eefbb030ceaf5c4fdb3b72",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "1c69f824bd397cf9d802cda330f4404c3271bdac74eefbb030ceaf5c4fdb3b72",
+        "version": "14.0.0.r353.g6df76fa52-2"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-lz4-1.10.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-lz4",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-lz4-1.10.0-1-any.pkg.tar.zst",
+        "sha256": "00a807df81a4b7e82445178b8625962ed592cf1f0a08a8e04c8b9338c4362638",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-lz4-1.10.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-lz4-1.10.0-1-any.pkg.tar.zst.sig",
+          "sha256": "12939cdb6f8d40a4da7c8d76fd2360459335eeffcca516b9c803f11784d91d53",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "12939cdb6f8d40a4da7c8d76fd2360459335eeffcca516b9c803f11784d91d53",
+        "version": "1.10.0-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-python",
+          "mingw-w64-ucrt-x86_64-ninja",
+          "mingw-w64-ucrt-x86_64-pkgconf"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-meson-1.12.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-meson",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-meson-1.12.0-1-any.pkg.tar.zst",
+        "sha256": "b467221a46dbc829e3ec23b80e5741d89aa630817f4147691e6f2dd529a231ac",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-meson-1.12.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-meson-1.12.0-1-any.pkg.tar.zst.sig",
+          "sha256": "e3d239a295f6cd03b9e561566c000e7a25e2b3dded8b919974b8e564d36cb5e4",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "e3d239a295f6cd03b9e561566c000e7a25e2b3dded8b919974b8e564d36cb5e4",
+        "version": "1.12.0-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gmp",
+          "mingw-w64-ucrt-x86_64-mpfr"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-mpc",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst",
+        "sha256": "f06556e811c711ce91609484e31d358e4f495811ba29813bf2284a3b236d82ce",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst.sig",
+          "sha256": "c6816cce004dfe57f976a60bdac037a52c7dbf29a4ee0f8085acca13b26cb5a0",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "c6816cce004dfe57f976a60bdac037a52c7dbf29a4ee0f8085acca13b26cb5a0",
+        "version": "1.4.1-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-mpdecimal-4.0.1-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-mpdecimal",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpdecimal-4.0.1-3-any.pkg.tar.zst",
+        "sha256": "abf25c3869ba5e5bc3b69fdeb6cd49b060fc1a64d0d2de10918adeae9630a68d",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-mpdecimal-4.0.1-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpdecimal-4.0.1-3-any.pkg.tar.zst.sig",
+          "sha256": "57bacb0a38597c8973b6fb3592b8e7ebc6a1b7751a474f366de1337763ece710",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "57bacb0a38597c8973b6fb3592b8e7ebc6a1b7751a474f366de1337763ece710",
+        "version": "4.0.1-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-gmp"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-mpfr",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst",
+        "sha256": "6b70a275d2ec75c70aa50a236c218e6b7ee9a5ab4c6d52cb0b580267b7d200fe",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst.sig",
+          "sha256": "6eb04885039d85bbf17a932840fc54aca8b871545711347c04309dcc840e11cd",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "6eb04885039d85bbf17a932840fc54aca8b871545711347c04309dcc840e11cd",
+        "version": "4.2.2-3"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-nasm",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst",
+        "sha256": "e60cf678bedee3d6c9a9264f8dec5897520e5ff7e3ae80c2b90b2628c5f51d58",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst.sig",
+          "sha256": "8939ebb3d4a4c5b56aad2c1af14b9a438a8ee79c9f2b66277d6260a6a08d8120",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "8939ebb3d4a4c5b56aad2c1af14b9a438a8ee79c9f2b66277d6260a6a08d8120",
+        "version": "3.02-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-pcre2",
+          "mingw-w64-ucrt-x86_64-libsystre"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-ncurses-6.6-4-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-ncurses",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ncurses-6.6-4-any.pkg.tar.zst",
+        "sha256": "88331fe78470ef2c5e0280652fee5e10b6dcaa35f8037725c359407f2702309c",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-ncurses-6.6-4-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ncurses-6.6-4-any.pkg.tar.zst.sig",
+          "sha256": "c33a9dd72c3aabe13b327231c0abad5ae530931d8e32d855771ed69095ea1f38",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "c33a9dd72c3aabe13b327231c0abad5ae530931d8e32d855771ed69095ea1f38",
+        "version": "6.6-4"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-gmp"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-nettle-4.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-nettle",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nettle-4.0-1-any.pkg.tar.zst",
+        "sha256": "47b49f1723ef2c75ff3042b6e463910c47cdffa3342e175b6409fb9d630e64ed",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-nettle-4.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nettle-4.0-1-any.pkg.tar.zst.sig",
+          "sha256": "f81831dfc9676e3810868c70af6f0349fac650733ca7d3123a578a93b7133661",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "f81831dfc9676e3810868c70af6f0349fac650733ca7d3123a578a93b7133661",
+        "version": "4.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-nghttp2-1.70.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-nghttp2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nghttp2-1.70.0-1-any.pkg.tar.zst",
+        "sha256": "39baf792ff3855c1d656514eaef648fab20de80614517fc15f57a57fa103cc20",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-nghttp2-1.70.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nghttp2-1.70.0-1-any.pkg.tar.zst.sig",
+          "sha256": "b0769122a38cfa54ca812623a1e91efdeec08dbdaf110322d3c8ffcb5c7af50f",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "b0769122a38cfa54ca812623a1e91efdeec08dbdaf110322d3c8ffcb5c7af50f",
+        "version": "1.70.0-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-nghttp3-1.18.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-nghttp3",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nghttp3-1.18.0-1-any.pkg.tar.zst",
+        "sha256": "06e51ea288e5fdd511c753038979772ec22ec71504dac61f912c63a6e586ba80",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-nghttp3-1.18.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-nghttp3-1.18.0-1-any.pkg.tar.zst.sig",
+          "sha256": "9ebbecec866228abfd7b083cc9b4eaafb4f95e66993043fe99fc7d95e0938993",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "9ebbecec866228abfd7b083cc9b4eaafb4f95e66993043fe99fc7d95e0938993",
+        "version": "1.18.0-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gnutls",
+          "mingw-w64-ucrt-x86_64-openssl"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-ngtcp2-1.25.0-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-ngtcp2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ngtcp2-1.25.0-1-any.pkg.tar.zst",
+        "sha256": "cce230d80a05cd0a1ec38fa5d76c0445c9bb725c65c2136be3d23e6dc218a89e",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-ngtcp2-1.25.0-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ngtcp2-1.25.0-1-any.pkg.tar.zst.sig",
+          "sha256": "334d0050b85275587eca34ad9d16f16a2205ee20fd7406b714f71d555aea3ad1",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "334d0050b85275587eca34ad9d16f16a2205ee20fd7406b714f71d555aea3ad1",
+        "version": "1.25.0-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-ninja-1.13.2-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-ninja",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ninja-1.13.2-1-any.pkg.tar.zst",
+        "sha256": "514685563a84a6ebddbbeee7bbafae5f3994e363c49364fc4507fabcaa049f2b",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-ninja-1.13.2-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-ninja-1.13.2-1-any.pkg.tar.zst.sig",
+          "sha256": "9f3d4a41aa2d51569cdebb38561aa80976d72434f79d4872b86f5ad95cc4dace",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "9f3d4a41aa2d51569cdebb38561aa80976d72434f79d4872b86f5ad95cc4dace",
+        "version": "1.13.2-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-openssl-3.6.4-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-openssl",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-openssl-3.6.4-1-any.pkg.tar.zst",
+        "sha256": "0b7b6497910450d9c9c0feef66f00493dc54f4afeab1e1144447e8f9d6e4366f",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-openssl-3.6.4-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-openssl-3.6.4-1-any.pkg.tar.zst.sig",
+          "sha256": "b9ea291ce92a6ac3d7575238a9f17a06939b5fb52930b0a75065d682a3839c47",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "b9ea291ce92a6ac3d7575238a9f17a06939b5fb52930b0a75065d682a3839c47",
+        "version": "3.6.4-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-libtasn1",
+          "mingw-w64-ucrt-x86_64-libffi",
+          "mingw-w64-ucrt-x86_64-gettext-runtime"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-p11-kit-0.26.5-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-p11-kit",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-p11-kit-0.26.5-1-any.pkg.tar.zst",
+        "sha256": "6e1645f0afa669f3e3325abb891d79c58dacf0bb5f9bb1ea719d22da1d754e62",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-p11-kit-0.26.5-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-p11-kit-0.26.5-1-any.pkg.tar.zst.sig",
+          "sha256": "f55114289b2e0ef0dc3b4edacc70462711addb3ef33aa404c3940a3788d60035",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "f55114289b2e0ef0dc3b4edacc70462711addb3ef33aa404c3940a3788d60035",
+        "version": "0.26.5-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-bzip2",
+          "mingw-w64-ucrt-x86_64-wineditline",
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-pcre2-10.48-3-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-pcre2",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-pcre2-10.48-3-any.pkg.tar.zst",
+        "sha256": "f1aae310be1c65ec0e2265d283ba01fcf322208bc19c96cfa52801fcc1c11746",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-pcre2-10.48-3-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-pcre2-10.48-3-any.pkg.tar.zst.sig",
+          "sha256": "12ffa79b80e7b4bcda87cc4aba433ec4c3919d8d28c8be4111f8253326a6a97e",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "12ffa79b80e7b4bcda87cc4aba433ec4c3919d8d28c8be4111f8253326a6a97e",
+        "version": "10.48-3"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-pkgconf-1~3.0.5-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-pkgconf",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-pkgconf-1~3.0.5-1-any.pkg.tar.zst",
+        "sha256": "79f559fae9283e7934b95810b18185e46fba43e455bd9ef936728907cc7ca4a7",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-pkgconf-1~3.0.5-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-pkgconf-1~3.0.5-1-any.pkg.tar.zst.sig",
+          "sha256": "950c007319ee179f94b30d2c3ba4247d06074464dfb38e1b855942fb0b1aa25d",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "950c007319ee179f94b30d2c3ba4247d06074464dfb38e1b855942fb0b1aa25d",
+        "version": "1~3.0.5-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs",
+          "mingw-w64-ucrt-x86_64-expat",
+          "mingw-w64-ucrt-x86_64-bzip2",
+          "mingw-w64-ucrt-x86_64-libffi",
+          "mingw-w64-ucrt-x86_64-mpdecimal",
+          "mingw-w64-ucrt-x86_64-ncurses",
+          "mingw-w64-ucrt-x86_64-openssl",
+          "mingw-w64-ucrt-x86_64-sqlite3",
+          "mingw-w64-ucrt-x86_64-tcl",
+          "mingw-w64-ucrt-x86_64-tk",
+          "mingw-w64-ucrt-x86_64-zlib",
+          "mingw-w64-ucrt-x86_64-libb2",
+          "mingw-w64-ucrt-x86_64-xz",
+          "mingw-w64-ucrt-x86_64-tzdata"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-python-3.14.7-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-python",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-python-3.14.7-1-any.pkg.tar.zst",
+        "sha256": "f409676214aa3d65260761826e1cc4bc356f05bd2d1ccabc8497d513ff86c425",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-python-3.14.7-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-python-3.14.7-1-any.pkg.tar.zst.sig",
+          "sha256": "086a2cc6139e396d580322e74c210bb7b95b92c6c9a695237321822e7c8ab44b",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "086a2cc6139e396d580322e74c210bb7b95b92c6c9a695237321822e7c8ab44b",
+        "version": "3.14.7-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gettext-runtime"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-rhash-1.4.6-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-rhash",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-rhash-1.4.6-1-any.pkg.tar.zst",
+        "sha256": "56f4a05b85f066795f2c8d6a4d822bf4b25a8dbf9f4c5b1bb2f7e10f812ad73e",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-rhash-1.4.6-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-rhash-1.4.6-1-any.pkg.tar.zst.sig",
+          "sha256": "4cc73df918a1cc56a201c8dbf0916133e387f1cb11bcf44b7237b8dafbdc035f",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "4cc73df918a1cc56a201c8dbf0916133e387f1cb11bcf44b7237b8dafbdc035f",
+        "version": "1.4.6-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-tcl",
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-sqlite3-3.53.4-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-sqlite3",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-sqlite3-3.53.4-1-any.pkg.tar.zst",
+        "sha256": "a8f904acb136634b4f708e8a0f9f301f76a3c42eea387a51300af961d0066051",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-sqlite3-3.53.4-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-sqlite3-3.53.4-1-any.pkg.tar.zst.sig",
+          "sha256": "411db8db2d45b21816b4894905f3d1131ec9920410ece3153edd86b82a4b9257",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "411db8db2d45b21816b4894905f3d1131ec9920410ece3153edd86b82a4b9257",
+        "version": "3.53.4-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-zlib"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-tcl-8.6.18-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-tcl",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tcl-8.6.18-1-any.pkg.tar.zst",
+        "sha256": "0c3a50ea5be8c5190e58a1fdc46c09f8113ad1b855745875646b7a78a02215df",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-tcl-8.6.18-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tcl-8.6.18-1-any.pkg.tar.zst.sig",
+          "sha256": "8371e770940696421ba337a12a409e31f811a8a3503556a87969c7b42687ada6",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "8371e770940696421ba337a12a409e31f811a8a3503556a87969c7b42687ada6",
+        "version": "8.6.18-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-tcl"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-tk-8.6.18-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-tk",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tk-8.6.18-1-any.pkg.tar.zst",
+        "sha256": "bfa011886032962833ddc93ae9b508798ec56625b9093cc6d0ff5c95507c79c6",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-tk-8.6.18-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tk-8.6.18-1-any.pkg.tar.zst.sig",
+          "sha256": "0d0ceada83de2ae3efd4cc000dae537b476648496fff9d5ae9737a3e4526dfa8",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "0d0ceada83de2ae3efd4cc000dae537b476648496fff9d5ae9737a3e4526dfa8",
+        "version": "8.6.18-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-tzdata-2026c-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-tzdata",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tzdata-2026c-1-any.pkg.tar.zst",
+        "sha256": "b6af6fd6acb676b9bb0761b75b1d8330b89abd4c8d467fda35cee8925b170db9",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-tzdata-2026c-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-tzdata-2026c-1-any.pkg.tar.zst.sig",
+          "sha256": "a7818a4d64d6d073db6041019665d73346ebbad2f43a9acf149833e42c209504",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "a7818a4d64d6d073db6041019665d73346ebbad2f43a9acf149833e42c209504",
+        "version": "2026c-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-windows-default-manifest",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst",
+        "sha256": "b39039f754a600cc0dec49df7d675a59a3cb2b63691d91b4ae60735ee7075eca",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst.sig",
+          "sha256": "e3d5eeee4fc45230c973bb8f08bd1fb3e0cd97846ffbe0a34c4ca54cc09a84fb",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "e3d5eeee4fc45230c973bb8f08bd1fb3e0cd97846ffbe0a34c4ca54cc09a84fb",
+        "version": "20260815-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-wineditline-2.208-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-wineditline",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-wineditline-2.208-1-any.pkg.tar.zst",
+        "sha256": "b07b34de1669e16cfd6743691914f5a66ad4013500bbf0e4c7a7644046ae7b1c",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-wineditline-2.208-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-wineditline-2.208-1-any.pkg.tar.zst.sig",
+          "sha256": "cc5cf21469088fd975b540e0c66db5eb46d96d012a90998caf27dcee8d700d1f",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "cc5cf21469088fd975b540e0c66db5eb46d96d012a90998caf27dcee8d700d1f",
+        "version": "2.208-1"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-crt",
+          "mingw-w64-ucrt-x86_64-libwinpthread"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-winpthreads",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst",
+        "sha256": "55663ad02cb46244221297ca72ee0ac07ba748a05989d381deb7c5c5ac518614",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r353.g6df76fa52-2-any.pkg.tar.zst.sig",
+          "sha256": "eb4399615dbc5bc03312efcc62323fdd5f35cfae2974862dcfad40c13abd765a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "eb4399615dbc5bc03312efcc62323fdd5f35cfae2974862dcfad40c13abd765a",
+        "version": "14.0.0.r353.g6df76fa52-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gettext-runtime"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-xz-5.8.3-1-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-xz",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-xz-5.8.3-1-any.pkg.tar.zst",
+        "sha256": "840af0192f4b67be09238e783249c78cc1672981e7d0acc5c67a6bd0b4bca0cb",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-xz-5.8.3-1-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-xz-5.8.3-1-any.pkg.tar.zst.sig",
+          "sha256": "d29ba7425155f3ee135d3e399d9e45033b02c0a3e0c2e1aeca864a89e75b621a",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "d29ba7425155f3ee135d3e399d9e45033b02c0a3e0c2e1aeca864a89e75b621a",
+        "version": "5.8.3-1"
+      },
+      {
+        "dependencies": [],
+        "filename": "mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-zlib",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst",
+        "sha256": "841401182976d2f9e17e5c0ebaac51f2a8014140ea53d67625e91c8fb3c85ea0",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst.sig",
+          "sha256": "3c21e4ca62ae9544f37ad41b0910f64d60f4f0c4c4113bc5c9287ce2b6396acb",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "3c21e4ca62ae9544f37ad41b0910f64d60f4f0c4c4113bc5c9287ce2b6396acb",
+        "version": "1.3.2-2"
+      },
+      {
+        "dependencies": [
+          "mingw-w64-ucrt-x86_64-gcc-libs"
+        ],
+        "filename": "mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst",
+        "name": "mingw-w64-ucrt-x86_64-zstd",
+        "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst",
+        "sha256": "dbdb8427280046a2b41697780aa4c52983b708082b0da4755951dc3bea96ca89",
+        "signature": {
+          "filename": "mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst.sig",
+          "retention_uri": "project://ffmpeg-build/msys2/packages/mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst.sig",
+          "sha256": "97b4fe48e37ed32bc8a952c01737b6263dceb5a9c2c6f6b3a2def8e22f4e8b35",
+          "signer": "5F944B027F7FE2091985AA2EFA11531AA0AA7F57",
+          "verified": true,
+          "verifier": "gpg --verify"
+        },
+        "signature_sha256": "97b4fe48e37ed32bc8a952c01737b6263dceb5a9c2c6f6b3a2def8e22f4e8b35",
+        "version": "1.5.7-2"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "name": "ffmpeg",
+      "path": "bin/ffmpeg.exe",
+      "version_prefix": "ffmpeg version 6.1.1"
+    },
+    {
+      "name": "ffprobe",
+      "path": "bin/ffprobe.exe",
+      "version_prefix": "ffprobe version 6.1.1"
+    }
+  ],
+  "patches": [
+    {
+      "name": "x265-cmake-4.4-compatibility",
+      "path": "packaging/ffmpeg-build/patches/x265-cmake-4.4-compatibility.patch",
+      "sha256": "95e97343c864b7d065967c5c3ed2b9d5143ada79ef88c26bc3f01adeb04822a9"
+    },
+    {
+      "name": "x265-pkgconfig-libs-private-no-lgcc_s",
+      "path": "packaging/ffmpeg-build/patches/x265-pkgconfig-libs-private-no-lgcc_s.patch",
+      "sha256": "079ea94d6e93e14e7f13dc67cba4dedbb1eda305a2c4d486df41da72fc6e0abe"
+    }
+  ],
+  "recipe_sha256": "cac496048633fd65633950358918f1c9c99af400a5666350ada3d471dba11ef1",
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "acquisition_type": "official_release",
+      "artifact_url": "https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
+      "filename": "ffmpeg-6.1.1.tar.xz",
+      "name": "ffmpeg",
+      "sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+      "source_commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
+      "verification_evidence": {
+        "artifact_sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+        "signature_url": "https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz.asc",
+        "signer": "FCF986EA15E6E293A5644F10B4322F04D67658D8",
+        "type": "pgp_signature",
+        "verified": true
+      },
+      "version": "6.1.1"
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "x264-c24e06c2e184345ceb33eb20a15d1024d9fd3497.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/x264/c24e06c2e184345ceb33eb20a15d1024d9fd3497.tar.gz",
+        "sha256": "6018eac487b77b9a5b18788dc2fd71559dcd1e1ce67ac53fee875744473e725d"
+      },
+      "commit": "c24e06c2e184345ceb33eb20a15d1024d9fd3497",
+      "name": "x264",
+      "upstream_remote_url": "https://code.videolan.org/videolan/x264.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=x264-c24e06c2e184345ceb33eb20a15d1024d9fd3497/ c24e06c2e184345ceb33eb20a15d1024d9fd3497",
+        "artifact_sha256": "6018eac487b77b9a5b18788dc2fd71559dcd1e1ce67ac53fee875744473e725d",
+        "bundle_retention_uri": "project://ffmpeg-build/git/x264/c24e06c2e184345ceb33eb20a15d1024d9fd3497.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/x264/c24e06c2e184345ceb33eb20a15d1024d9fd3497.tar.gz",
+        "commit": "c24e06c2e184345ceb33eb20a15d1024d9fd3497",
+        "git_bundle_sha256": "9e23573e8d2ab1481ac26b809db470df3a22573bdc1096bff6eb34158d1d17b0",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://code.videolan.org/videolan/x264.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "x265-f0c1022b6be121a753ff02853fbe33da71988656.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/x265/f0c1022b6be121a753ff02853fbe33da71988656.tar.gz",
+        "sha256": "c3af02a26d7e13b2cfeb31dd3493ae08bd7290110081f52351b3bbc6a2c13288"
+      },
+      "commit": "f0c1022b6be121a753ff02853fbe33da71988656",
+      "name": "x265",
+      "upstream_remote_url": "https://bitbucket.org/multicoreware/x265_git.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=x265-f0c1022b6be121a753ff02853fbe33da71988656/ f0c1022b6be121a753ff02853fbe33da71988656",
+        "artifact_sha256": "c3af02a26d7e13b2cfeb31dd3493ae08bd7290110081f52351b3bbc6a2c13288",
+        "bundle_retention_uri": "project://ffmpeg-build/git/x265/f0c1022b6be121a753ff02853fbe33da71988656.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/x265/f0c1022b6be121a753ff02853fbe33da71988656.tar.gz",
+        "commit": "f0c1022b6be121a753ff02853fbe33da71988656",
+        "git_bundle_sha256": "075ac9eb48239dcab9a074f59871b8ec4ddc72e5125774add19cb8c3bc4fa5f6",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://bitbucket.org/multicoreware/x265_git.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "libvpx-10b9492dcf05b652e2e4b370e205bd605d421972.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/libvpx/10b9492dcf05b652e2e4b370e205bd605d421972.tar.gz",
+        "sha256": "f14e1973b62fd8be72ff5e9432b34043138a8ce75728aa861d51924d36aa3a88"
+      },
+      "commit": "10b9492dcf05b652e2e4b370e205bd605d421972",
+      "name": "libvpx",
+      "upstream_remote_url": "https://chromium.googlesource.com/webm/libvpx",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=libvpx-10b9492dcf05b652e2e4b370e205bd605d421972/ 10b9492dcf05b652e2e4b370e205bd605d421972",
+        "artifact_sha256": "f14e1973b62fd8be72ff5e9432b34043138a8ce75728aa861d51924d36aa3a88",
+        "bundle_retention_uri": "project://ffmpeg-build/git/libvpx/10b9492dcf05b652e2e4b370e205bd605d421972.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/libvpx/10b9492dcf05b652e2e4b370e205bd605d421972.tar.gz",
+        "commit": "10b9492dcf05b652e2e4b370e205bd605d421972",
+        "git_bundle_sha256": "3f99d708ccfddd015b8a1545787182d0302e21daa783158d83377e7099050cfe",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://chromium.googlesource.com/webm/libvpx",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "svt-av1-59645eea34e2815b627b8293aa3af254eddd0d69.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/svt-av1/59645eea34e2815b627b8293aa3af254eddd0d69.tar.gz",
+        "sha256": "efd50a1b1664d87e2c90b09966cbf12a6fe513f1ad7714b5176a348d0a917af3"
+      },
+      "commit": "59645eea34e2815b627b8293aa3af254eddd0d69",
+      "name": "svt-av1",
+      "upstream_remote_url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=svt-av1-59645eea34e2815b627b8293aa3af254eddd0d69/ 59645eea34e2815b627b8293aa3af254eddd0d69",
+        "artifact_sha256": "efd50a1b1664d87e2c90b09966cbf12a6fe513f1ad7714b5176a348d0a917af3",
+        "bundle_retention_uri": "project://ffmpeg-build/git/svt-av1/59645eea34e2815b627b8293aa3af254eddd0d69.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/svt-av1/59645eea34e2815b627b8293aa3af254eddd0d69.tar.gz",
+        "commit": "59645eea34e2815b627b8293aa3af254eddd0d69",
+        "git_bundle_sha256": "eaab44ecf4526d717f5124109121f2dba39a43e189fece5a1fe3d1b5e5a7d24a",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://gitlab.com/AOMediaCodec/SVT-AV1.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "official_release",
+      "artifact_url": "https://github.com/xiph/opus/releases/download/v1.4/opus-1.4.tar.gz",
+      "filename": "opus-1.4.tar.gz",
+      "name": "libopus",
+      "sha256": "c9b32b4253be5ae63d1ff16eea06b94b5f0f2951b7a02aceef58e3a3ce49c51f",
+      "verification_evidence": {
+        "algorithm": "sha256",
+        "artifact_sha256": "c9b32b4253be5ae63d1ff16eea06b94b5f0f2951b7a02aceef58e3a3ce49c51f",
+        "expected_digest": "c9b32b4253be5ae63d1ff16eea06b94b5f0f2951b7a02aceef58e3a3ce49c51f",
+        "type": "published_checksum",
+        "verified": true,
+        "verifier": "sha256sum"
+      },
+      "version": "1.4"
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "nv-codec-headers-1889e62e2d35ff7aa9baca2bceb14f053785e6f1.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/nv-codec-headers/1889e62e2d35ff7aa9baca2bceb14f053785e6f1.tar.gz",
+        "sha256": "3aeb24be63a573658bf2d851fc8e36d50ce0ae22e3a8b1baa5adae3e2e576d70"
+      },
+      "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+      "name": "nv-codec-headers",
+      "upstream_remote_url": "https://github.com/FFmpeg/nv-codec-headers.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=nv-codec-headers-1889e62e2d35ff7aa9baca2bceb14f053785e6f1/ 1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+        "artifact_sha256": "3aeb24be63a573658bf2d851fc8e36d50ce0ae22e3a8b1baa5adae3e2e576d70",
+        "bundle_retention_uri": "project://ffmpeg-build/git/nv-codec-headers/1889e62e2d35ff7aa9baca2bceb14f053785e6f1.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/nv-codec-headers/1889e62e2d35ff7aa9baca2bceb14f053785e6f1.tar.gz",
+        "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+        "git_bundle_sha256": "75d4071805c76e857a3e916cb3d9a697fadf0ec99bdd3d28bdec4fa2646c8760",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://github.com/FFmpeg/nv-codec-headers.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "amf-c48e50ad6c8723c006b2c145d8fa49ecc0651022.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/amf/c48e50ad6c8723c006b2c145d8fa49ecc0651022.tar.gz",
+        "sha256": "90557f52a3d56251503b0006d0e189faaadd917a16017c39d4cbff095b1d309b"
+      },
+      "commit": "c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+      "name": "amf",
+      "upstream_remote_url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=amf-c48e50ad6c8723c006b2c145d8fa49ecc0651022/ c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+        "artifact_sha256": "90557f52a3d56251503b0006d0e189faaadd917a16017c39d4cbff095b1d309b",
+        "bundle_retention_uri": "project://ffmpeg-build/git/amf/c48e50ad6c8723c006b2c145d8fa49ecc0651022.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/amf/c48e50ad6c8723c006b2c145d8fa49ecc0651022.tar.gz",
+        "commit": "c48e50ad6c8723c006b2c145d8fa49ecc0651022",
+        "git_bundle_sha256": "e63b5867fa45fdb6cc6588d6a65ec3102916d1af19c506d4eb10d06107b1ba44",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    },
+    {
+      "acquisition_type": "commit_archive",
+      "canonical_artifact": {
+        "filename": "libvpl-11a9bbda5b22ac1c544da59b4007bb57f737b487.tar.gz",
+        "origin": "git_archive",
+        "retention_uri": "project://ffmpeg-build/git/libvpl/11a9bbda5b22ac1c544da59b4007bb57f737b487.tar.gz",
+        "sha256": "293a1143383c4399e62f533290f9c6650ab1fe7f21caecc917868239e831b17b"
+      },
+      "commit": "11a9bbda5b22ac1c544da59b4007bb57f737b487",
+      "name": "libvpl",
+      "upstream_remote_url": "https://github.com/intel/libvpl.git",
+      "verification_evidence": {
+        "archive_command": "git archive --format=tar.gz --prefix=libvpl-11a9bbda5b22ac1c544da59b4007bb57f737b487/ 11a9bbda5b22ac1c544da59b4007bb57f737b487",
+        "artifact_sha256": "293a1143383c4399e62f533290f9c6650ab1fe7f21caecc917868239e831b17b",
+        "bundle_retention_uri": "project://ffmpeg-build/git/libvpl/11a9bbda5b22ac1c544da59b4007bb57f737b487.bundle",
+        "canonical_archive_retention_uri": "project://ffmpeg-build/git/libvpl/11a9bbda5b22ac1c544da59b4007bb57f737b487.tar.gz",
+        "commit": "11a9bbda5b22ac1c544da59b4007bb57f737b487",
+        "git_bundle_sha256": "d315b45e2ed9bfae17794af33be794b5f16cceeec161d356edeef54191389271",
+        "git_version": "git version 2.55.0",
+        "remote_url": "https://github.com/intel/libvpl.git",
+        "type": "commit_archive",
+        "verified": true,
+        "verifier": "git-rev-parse-and-archive"
+      }
+    }
+  ],
+  "toolchain": {
+    "environment": "UCRT64",
+    "target": "x86_64-w64-mingw32"
+  }
+}

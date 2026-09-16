@@ -1,0 +1,15 @@
+{
+  "artifact_name": "Local Custom UCRT64 FFmpeg 6.1.1 Static",
+  "archive_url": "local://ffmpeg-v1-output",
+  "release_page": null,
+  "expected_binaries": {
+    "ffmpeg.exe": {
+      "sha256": "8bdc09032e11e264807b0e73313d8455d1e333c446a4849494112f27fa287dd5",
+      "version_prefix": "ffmpeg version 6.1.1"
+    },
+    "ffprobe.exe": {
+      "sha256": "dc250168d0126a3fbdf5258478753adbba174628de9e9c5936ad77d735460c8c",
+      "version_prefix": "ffprobe version 6.1.1"
+    }
+  }
+}

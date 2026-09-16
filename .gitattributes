@@ -1,0 +1,2 @@
+# Reproducibility-critical FFmpeg lock and recipe files are byte-exact.
+packaging/ffmpeg-build/** text eol=lf

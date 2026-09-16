@@ -1,0 +1,28 @@
+﻿ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+Artifact: Local Custom UCRT64 FFmpeg 6.1.1 Static
+Archive Source: local://ffmpeg-v1-output
+Provenance: Local MSYS2 UCRT64 Static Build (ffmpeg-v1-output)
+FFmpeg Upstream Source Tag: n6.1.1
+FFmpeg Upstream Commit: e38092ef93
+NVENC Headers Source Commit: 1889e62e2d35ff7aa9baca2bceb14f053785e6f1
+NVENC Interface Baseline: NVENC API 12.1
+ffmpeg.exe SHA256: 8BDC09032E11E264807B0E73313D8455D1E333C446A4849494112F27FA287DD5
+ffprobe.exe SHA256: DC250168D0126A3FBDF5258478753ADBBA174628DE9E9C5936AD77D735460C8C
+Builder Script SHA256: E16299E0038EFFE91800655C8BEF9AB24F1B9BEC215CE634D8B0D9D40AE954B6
+Encoders Inventory SHA256: 7B6A3D3D0267591B20532396CB8A1C75FF96AA361B82A8089EDEB4C684F4109F
+Acquisition Date: 2026-09-14
+Effective License: GNU General Public License version 2 or later (GPL-2.0-or-later)
+Build Configuration:
+configuration: --prefix=/d/ffmpeg-v1-candidate --bindir=/d/ffmpeg-v1-candidate/bin --enable-static --disable-shared --pkg-config=pkgconf --pkg-config-flags=--static --extra-cflags='-I/d/ffmpeg-v1-build-requalified/prefix/include -Wno-error=incompatible-pointer-types' --extra-ldflags='-static -L/d/ffmpeg-v1-build-requalified/prefix/lib -static-libgcc -static-libstdc++' --target-os=mingw32 --arch=x86_64 --enable-gpl --enable-libx264 --enable-libx265 --enable-libvpx --enable-libsvtav1 --enable-libopus --enable-nvenc --enable-libvpl --enable-amf --disable-ffplay --disable-doc
+Compiled H.264 Encoders:
+ V....D libx264              libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (codec h264)
+ V....D libx264rgb           libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 RGB (codec h264)
+ V....D h264_amf             AMD AMF H.264 Encoder (codec h264)
+ V....D h264_mf              H264 via MediaFoundation (codec h264)
+ V....D h264_nvenc           NVIDIA NVENC H.264 encoder (codec h264)
+ V..... h264_qsv             H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (Intel Quick Sync Video acceleration) (codec h264)
+Local NVENC H.264 Conservative Probe:
+    Command: bin\ffmpeg.exe -hide_banner -loglevel warning -f lavfi -i testsrc=duration=0.04:size=64x64:rate=25 -c:v h264_nvenc -preset medium -rc vbr -cq 24 -f null -
+    Exit Code: 0
+    Outcome: SUCCESS
+    Captured Output: <none>
