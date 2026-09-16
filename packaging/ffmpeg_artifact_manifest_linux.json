@@ -1,0 +1,15 @@
+{
+  "artifact_name": "Local Custom Ubuntu 22.04 FFmpeg 6.1.1",
+  "archive_url": "local://ffmpeg-linux-output",
+  "release_page": null,
+  "expected_binaries": {
+    "ffmpeg": {
+      "sha256": "81f35eea5bc6de2a369aa33ed47574dd816bbd43c7778db7298480fbf3bb185d",
+      "version_prefix": "ffmpeg version 6.1.1"
+    },
+    "ffprobe": {
+      "sha256": "afed2d0b0d0ba3a0ed9dd2eebee87fffce76eac7c2a42e9d36d14089c74f06d2",
+      "version_prefix": "ffmpeg version 6.1.1"
+    }
+  }
+}

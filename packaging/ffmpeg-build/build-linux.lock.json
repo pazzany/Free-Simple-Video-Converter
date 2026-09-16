@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "target": {
+    "os": "linux",
+    "distro": "ubuntu-22.04",
+    "arch": "x86_64"
+  },
+  "toolchain": {
+    "environment": "ubuntu-jammy-native",
+    "packages": {
+      "gcc": "4:11.2.0-1ubuntu1",
+      "nasm": "2.15.05-1",
+      "cmake": "3.22.1-1ubuntu1.22.04.2",
+      "ninja-build": "1.10.1-1",
+      "meson": "0.61.2-1",
+      "pkg-config": "0.29.2-1ubuntu3",
+      "pkgconf": "1.8.0-1",
+      "autoconf": "2.71-2",
+      "automake": "1:1.16.5-1.3",
+      "libtool": "2.4.6-15build2",
+      "libva-dev": "2.14.0-1",
+      "libdrm-dev": "2.4.113-2~ubuntu0.22.04.1"
+    }
+  },
+  "sources": [
+    {
+      "name": "ffmpeg",
+      "acquisition_type": "official_release",
+      "version": "6.1.1",
+      "sha256": "8684f4b00f94b85461884c3719382f1261f0d9eb3d59640a1f4ac0873616f968",
+      "filename": "ffmpeg-6.1.1.tar.xz"
+    },
+    {
+      "name": "x264",
+      "acquisition_type": "commit_archive",
+      "commit": "c24e06c2e184345ceb33eb20a15d1024d9fd3497",
+      "canonical_artifact": {
+        "sha256": "6018eac487b77b9a5b18788dc2fd71559dcd1e1ce67ac53fee875744473e725d",
+        "filename": "x264-c24e06c2e184345ceb33eb20a15d1024d9fd3497.tar.gz"
+      }
+    },
+    {
+      "name": "x265",
+      "acquisition_type": "commit_archive",
+      "commit": "f0c1022b6be121a753ff02853fbe33da71988656",
+      "canonical_artifact": {
+        "sha256": "c3af02a26d7e13b2cfeb31dd3493ae08bd7290110081f52351b3bbc6a2c13288",
+        "filename": "x265-f0c1022b6be121a753ff02853fbe33da71988656.tar.gz"
+      }
+    },
+    {
+      "name": "libvpx",
+      "acquisition_type": "commit_archive",
+      "commit": "10b9492dcf05b652e2e4b370e205bd605d421972",
+      "canonical_artifact": {
+        "sha256": "f14e1973b62fd8be72ff5e9432b34043138a8ce75728aa861d51924d36aa3a88",
+        "filename": "libvpx-10b9492dcf05b652e2e4b370e205bd605d421972.tar.gz"
+      }
+    },
+    {
+      "name": "svt-av1",
+      "acquisition_type": "commit_archive",
+      "commit": "59645eea34e2815b627b8293aa3af254eddd0d69",
+      "canonical_artifact": {
+        "sha256": "efd50a1b1664d87e2c90b09966cbf12a6fe513f1ad7714b5176a348d0a917af3",
+        "filename": "svt-av1-59645eea34e2815b627b8293aa3af254eddd0d69.tar.gz"
+      }
+    },
+    {
+      "name": "libopus",
+      "acquisition_type": "official_release",
+      "version": "1.4",
+      "sha256": "c9b32b4253be5ae63d1ff16eea06b94b5f0f2951b7a02aceef58e3a3ce49c51f",
+      "filename": "opus-1.4.tar.gz"
+    },
+    {
+      "name": "nv-codec-headers",
+      "acquisition_type": "commit_archive",
+      "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+      "canonical_artifact": {
+        "sha256": "3aeb24be63a573658bf2d851fc8e36d50ce0ae22e3a8b1baa5adae3e2e576d70",
+        "filename": "nv-codec-headers-1889e62e2d35ff7aa9baca2bceb14f053785e6f1.tar.gz"
+      }
+    },
+    {
+      "name": "libvpl",
+      "acquisition_type": "commit_archive",
+      "commit": "11a9bbda5b22ac1c544da59b4007bb57f737b487",
+      "canonical_artifact": {
+        "sha256": "293a1143383c4399e62f533290f9c6650ab1fe7f21caecc917868239e831b17b",
+        "filename": "libvpl-11a9bbda5b22ac1c544da59b4007bb57f737b487.tar.gz"
+      }
+    }
+  ],
+  "configure": {
+    "flags": [
+      "--enable-gpl",
+      "--enable-libx264",
+      "--enable-libx265",
+      "--enable-libvpx",
+      "--enable-libsvtav1",
+      "--enable-libopus",
+      "--enable-nvenc",
+      "--enable-nvdec",
+      "--enable-libvpl",
+      "--enable-vaapi",
+      "--enable-libdrm",
+      "--disable-ffplay",
+      "--disable-doc"
+    ]
+  },
+  "patches": [],
+  "outputs": [
+    {
+      "name": "ffmpeg",
+      "path": "bin/ffmpeg",
+      "version_prefix": "ffmpeg version 6.1.1"
+    },
+    {
+      "name": "ffprobe",
+      "path": "bin/ffprobe",
+      "version_prefix": "ffprobe version 6.1.1"
+    }
+  ]
+}
