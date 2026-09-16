@@ -85,6 +85,17 @@ The FFmpeg artifact utilized in standalone packaging:
 
 Complete build configuration capture and runtime details are preserved in `packaging/ffmpeg_release_artifact.txt`.
 
+## 4. Noto Emoji Font (Linux Emoji Fallback)
+
+The Linux application bundle ships the monochrome Noto Emoji font, loaded at
+startup only when the host system provides no emoji font family, so symbol
+glyphs in button labels render on minimal systems.
+
+- **Author / Copyright**: Copyright (c) Google LLC
+- **License**: SIL Open Font License, Version 1.1 ([https://openfontlicense.org](https://openfontlicense.org))
+- **Source**: [https://github.com/google/fonts/tree/main/ofl/notoemoji](https://github.com/google/fonts/tree/main/ofl/notoemoji)
+- **Bundled file**: `assets/fonts/NotoEmoji.ttf`
+
 ### Source Code Delivery for Standalone Releases
 
 Under GPL terms, distribution of binary packages embedding GPL FFmpeg binaries requires providing corresponding source code.

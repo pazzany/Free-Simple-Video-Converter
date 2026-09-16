@@ -88,6 +88,10 @@ def build(repo_root: Path, bin_dir: Path, dist_dir: Path, work_dir: Path) -> Pat
         f"{bin_dir / 'ffmpeg'}:.",
         "--add-binary",
         f"{bin_dir / 'ffprobe'}:.",
+        "--add-data",
+        f"{repo_root / 'assets' / 'icon.ico'}:assets",
+        "--add-data",
+        f"{repo_root / 'assets' / 'fonts'}:assets/fonts",
         str(entry_point),
     ]
     print("Running PyInstaller:", " ".join(args))

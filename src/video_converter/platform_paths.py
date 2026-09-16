@@ -9,6 +9,27 @@ from PySide6.QtCore import QStandardPaths
 APP_DIR_NAME = "FreeSimpleVideoConverter"
 APP_DISPLAY_NAME = "Free Simple Video Converter"
 
+EMOJI_FONT_FAMILIES = frozenset(
+    {
+        "noto color emoji",
+        "noto emoji",
+        "segoe ui emoji",
+        "apple color emoji",
+        "twemoji mozilla",
+        "android emoji",
+    }
+)
+
+BUNDLED_EMOJI_FONT = "assets/fonts/NotoEmoji.ttf"
+
+
+def system_has_emoji_font(families: list[str]) -> bool:
+    """Return True when a system emoji font family is available.
+
+    Takes a plain family-name list so the predicate stays testable without Qt.
+    """
+    return any(family.strip().lower() in EMOJI_FONT_FAMILIES for family in families)
+
 
 def get_app_config_dir() -> Path:
     """Get the application configuration directory.

@@ -10,9 +10,11 @@ from PySide6.QtCore import QStandardPaths
 
 from video_converter.platform_paths import (
     APP_DIR_NAME,
+    BUNDLED_EMOJI_FONT,
     get_app_config_dir,
     get_bundled_resource,
     get_config_path,
+    system_has_emoji_font,
 )
 
 
@@ -127,3 +129,23 @@ class TestPlatformPaths:
 
         res = get_bundled_resource("non_existent_file_xyz_123.tmp")
         assert res is None
+
+
+class TestEmojiFontFallback:
+    @pytest.mark.parametrize(
+        ("families", "expected"),
+        [
+            ([], False),
+            (["DejaVu Sans", "Liberation Sans"], False),
+            (["DejaVu Sans", "Noto Color Emoji"], True),
+            (["segoe ui emoji"], True),
+            (["  Noto Emoji  "], True),
+        ],
+    )
+    def test_system_has_emoji_font(self, families: list[str], expected: bool):
+        assert system_has_emoji_font(families) is expected
+
+    def test_bundled_emoji_font_present_in_repo(self):
+        font_path = Path(__file__).resolve().parent.parent.parent / BUNDLED_EMOJI_FONT
+        assert font_path.is_file()
+        assert font_path.stat().st_size > 100_000
