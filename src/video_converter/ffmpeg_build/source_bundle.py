@@ -118,6 +118,11 @@ def _canonicalize_locked_patch_bytes(data: bytes) -> bytes:
     return data.replace(b"\r\n", b"\n")
 
 
+def _canonicalize_locked_manifest_bytes(data: bytes) -> bytes:
+    """Return the CRLF form used by the immutable acquisition manifest digest."""
+    return data.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
+
+
 def _assert_not_symlink(path: Path, context: str) -> None:
     if path.is_symlink():
         raise ValueError(f"Symlink input rejected for {context}: {path}")
@@ -377,7 +382,7 @@ def create_corresponding_source_zip(
         raise FileNotFoundError(f"Acquisition manifest file not found: {manifest_path}")
     _assert_path_under_root_and_no_symlinks(manifest_path, workspace_root, "acquisition manifest")
 
-    manifest_raw_bytes = manifest_path.read_bytes()
+    manifest_raw_bytes = _canonicalize_locked_manifest_bytes(manifest_path.read_bytes())
     manifest_sha = _compute_sha256(manifest_raw_bytes)
     manifest = decode_json_without_duplicate_keys(manifest_raw_bytes.decode("utf-8"))
 
@@ -485,7 +490,11 @@ def create_corresponding_source_zip(
         _validate_archive_rel_path(arc_name)
         if arc_name in entries:
             raise ValueError(f"Duplicate entry path planned in ZIP: {arc_name}")
-        entries[arc_name] = file_path
+        entries[arc_name] = (
+            _canonicalize_locked_manifest_bytes(file_path.read_bytes())
+            if rel_path == "packaging/ffmpeg-build/acquisition-manifest.json"
+            else file_path
+        )
 
     # 3. Patch files
     for rel_path, arc_name in STANDARD_PATCH_FILES:
