@@ -17,7 +17,7 @@ def main() -> None:
     app = QApplication(sys.argv)
     app.setApplicationName("FreeSimpleVideoConverter")
     app.setApplicationDisplayName("Free Simple Video Converter")
-    app.setApplicationVersion("1.0.0")
+    app.setApplicationVersion("1.0.1")
 
     # Set Application Icon if available
     icon_path = get_bundled_resource("assets/icon.ico") or get_bundled_resource("icon.ico")
