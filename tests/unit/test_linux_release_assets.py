@@ -220,5 +220,7 @@ def test_source_zip_roundtrip_and_tamper(tmp_path: Path, monkeypatch: pytest.Mon
     tampered.write_bytes((release_dir / plra.SOURCE_ZIP_NAME).read_bytes())
     with zipfile.ZipFile(tampered, "a") as zf:
         zf.writestr("extra.txt", b"extra")
-    with pytest.raises(ValueError, match="entry mismatch|Extra|Non-unix entry"):
+    with pytest.raises(
+        ValueError, match="entry mismatch|Extra|Non-unix entry|Bad mode"
+    ):
         plra.validate_linux_source_zip(tampered, fixture["repo_root"], fixture["lock"])
