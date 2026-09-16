@@ -152,6 +152,22 @@ def test_get_encoder_args_amf():
 # ---------------------------------------------------------
 
 @patch("subprocess.run")
+def test_probe_frame_meets_hardware_minimum_dimensions(mock_run):
+    """Probe frames must satisfy hardware encoder minimum dimensions.
+
+    NVIDIA NVENC (e.g. Turing) rejects frames smaller than 146x146 for
+    H.264, so a 64x64 probe falsely reports NVENC as unavailable.
+    """
+    mock_run.return_value = MagicMock(returncode=0, stderr=b"")
+    probe_encoder("ffmpeg.exe", EncoderType.NVENC, use_cache=False)
+    cmd = mock_run.call_args[0][0]
+    testsrc = cmd[cmd.index("-i") + 1]
+    size = testsrc.split("size=")[1].split(":")[0]
+    width, height = (int(part) for part in size.split("x"))
+    assert min(width, height) >= 146
+
+
+@patch("subprocess.run")
 def test_probe_encoder_exact_args_nvenc(mock_run):
     mock_run.return_value = MagicMock(returncode=0, stderr=b"")
     res = probe_encoder("ffmpeg.exe", EncoderType.NVENC, use_cache=False)
@@ -166,7 +182,7 @@ def test_probe_encoder_exact_args_nvenc(mock_run):
             "-f",
             "lavfi",
             "-i",
-            "testsrc=duration=0.04:size=64x64:rate=25",
+            "testsrc=duration=0.04:size=256x256:rate=25",
             "-c:v",
             "h264_nvenc",
             "-cq",
@@ -201,7 +217,7 @@ def test_probe_encoder_exact_args_qsv(mock_run):
             "-f",
             "lavfi",
             "-i",
-            "testsrc=duration=0.04:size=64x64:rate=25",
+            "testsrc=duration=0.04:size=256x256:rate=25",
             "-c:v",
             "h264_qsv",
             "-global_quality",
@@ -234,7 +250,7 @@ def test_probe_encoder_exact_args_amf(mock_run):
             "-f",
             "lavfi",
             "-i",
-            "testsrc=duration=0.04:size=64x64:rate=25",
+            "testsrc=duration=0.04:size=256x256:rate=25",
             "-c:v",
             "h264_amf",
             "-rc",

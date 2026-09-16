@@ -9,6 +9,12 @@ import threading
 from video_converter.domain.encoders import EncoderProbeResult, EncoderSelectionResult, EncoderType
 from video_converter.media.binaries import find_ffmpeg
 
+# Probe frame size. Must stay at or above hardware encoder minimum input
+# dimensions (NVIDIA NVENC requires at least 146x146 for H.264); smaller
+# frames make working hardware encoders fail initialization and report
+# themselves unavailable.
+PROBE_FRAME_SIZE = "256x256"
+
 # In-memory cache for probed encoder results: (ffmpeg_path, encoder) -> EncoderProbeResult
 _ENCODER_PROBE_CACHE: dict[tuple[str, EncoderType], EncoderProbeResult] = {}
 _PROBE_CACHE_LOCK = threading.Lock()
@@ -108,7 +114,7 @@ def _execute_probe_subprocess(ffmpeg_path: str, encoder: EncoderType) -> Encoder
         "-f",
         "lavfi",
         "-i",
-        "testsrc=duration=0.04:size=64x64:rate=25",
+        f"testsrc=duration=0.04:size={PROBE_FRAME_SIZE}:rate=25",
         *get_encoder_args(encoder, crf=24),
         "-f",
         "null",
