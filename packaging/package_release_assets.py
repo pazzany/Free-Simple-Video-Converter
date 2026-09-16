@@ -397,7 +397,7 @@ def package_release_assets(
     # Reject directory conflicts at release-assets destinations
     expected_release_asset_files = [
         "ffmpeg-6.1.1-custom-source.zip",
-        "FreeSimpleVideoConverter-v1.0.0-windows-x64.zip",
+        "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip",
         "SHA256SUMS.txt",
     ]
     for asset_name in expected_release_asset_files:
@@ -588,7 +588,7 @@ def package_release_assets(
 
     try:
         temp_source_zip = temp_assets_dir / "ffmpeg-6.1.1-custom-source.zip"
-        temp_app_zip = temp_assets_dir / "FreeSimpleVideoConverter-v1.0.0-windows-x64.zip"
+        temp_app_zip = temp_assets_dir / "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip"
         temp_sums_file = temp_assets_dir / "SHA256SUMS.txt"
 
         source_summary = create_corresponding_source_zip(

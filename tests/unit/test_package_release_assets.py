@@ -1026,7 +1026,7 @@ def test_package_release_assets_pipeline_skip_pyinstaller(
 
     release_assets = dist / "release-assets"
     source_zip = release_assets / "ffmpeg-6.1.1-custom-source.zip"
-    app_zip = release_assets / "FreeSimpleVideoConverter-v1.0.0-windows-x64.zip"
+    app_zip = release_assets / "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip"
     sums_file = release_assets / "SHA256SUMS.txt"
 
     assert source_zip.is_file()
@@ -1040,10 +1040,10 @@ def test_package_release_assets_pipeline_skip_pyinstaller(
     verified = pra.verify_sha256sums(sums_file)
     assert set(verified.keys()) == {
         "ffmpeg-6.1.1-custom-source.zip",
-        "FreeSimpleVideoConverter-v1.0.0-windows-x64.zip",
+        "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip",
     }
     assert verified["ffmpeg-6.1.1-custom-source.zip"] == _sha256(source_zip.read_bytes())
-    assert verified["FreeSimpleVideoConverter-v1.0.0-windows-x64.zip"] == _sha256(app_zip.read_bytes())
+    assert verified["FreeSimpleVideoConverter-v1.0.1-windows-x64.zip"] == _sha256(app_zip.read_bytes())
 
 
 def test_main_cli_entrypoint(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
@@ -1434,7 +1434,7 @@ def test_conflict_all_three_release_assets_destination_directories_rejected(
 
     conflict_targets = [
         "ffmpeg-6.1.1-custom-source.zip",
-        "FreeSimpleVideoConverter-v1.0.0-windows-x64.zip",
+        "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip",
         "SHA256SUMS.txt",
     ]
 

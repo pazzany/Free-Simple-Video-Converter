@@ -1,2 +1,12 @@
 # Reproducibility-critical FFmpeg lock and recipe files are byte-exact.
 packaging/ffmpeg-build/** text eol=lf
+# The immutable v1 build record binds the CRLF byte form of these three
+# recipe files (see D:/ffmpeg-v1-output/build-record.json and the v1.0.0
+# corresponding-source archive). They must materialize as CRLF on every
+# checkout. Later matching lines win in .gitattributes.
+packaging/ffmpeg-build/build.lock.json text eol=crlf
+packaging/ffmpeg-build/acquisition-manifest.json text eol=crlf
+# build_ffmpeg.sh is stored byte-exact (-text, no conversion): the immutable
+# v1 build record binds its original mixed line endings, which no uniform
+# eol conversion can reproduce.
+packaging/ffmpeg-build/build_ffmpeg.sh -text
