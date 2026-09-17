@@ -53,6 +53,11 @@ SHA256_STRICT_LINE_PATTERN = re.compile(r"^([0-9a-f]{64}) \*([^/\\\s]+\.zip)\n$"
 SHA256_HEX_PATTERN = re.compile(r"^[0-9a-f]{64}$")
 REQUIRED_BINARIES = ("ffmpeg.exe", "ffprobe.exe")
 
+# Release version stamped into the Windows application archive name.
+# Bump together with pyproject.toml on every release.
+APP_VERSION = "1.0.2"
+APP_DIST_ZIP_NAME = f"FreeSimpleVideoConverter-v{APP_VERSION}-windows-x64.zip"
+
 APP_DIST_DOC_FILES = [
     "README.md",
     "LICENSE",
@@ -397,7 +402,7 @@ def package_release_assets(
     # Reject directory conflicts at release-assets destinations
     expected_release_asset_files = [
         "ffmpeg-6.1.1-custom-source.zip",
-        "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip",
+        APP_DIST_ZIP_NAME,
         "SHA256SUMS.txt",
     ]
     for asset_name in expected_release_asset_files:
@@ -588,7 +593,7 @@ def package_release_assets(
 
     try:
         temp_source_zip = temp_assets_dir / "ffmpeg-6.1.1-custom-source.zip"
-        temp_app_zip = temp_assets_dir / "FreeSimpleVideoConverter-v1.0.1-windows-x64.zip"
+        temp_app_zip = temp_assets_dir / APP_DIST_ZIP_NAME
         temp_sums_file = temp_assets_dir / "SHA256SUMS.txt"
 
         source_summary = create_corresponding_source_zip(
