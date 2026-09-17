@@ -36,7 +36,7 @@ def main() -> None:
     app = QApplication(sys.argv)
     app.setApplicationName("FreeSimpleVideoConverter")
     app.setApplicationDisplayName("Free Simple Video Converter")
-    app.setApplicationVersion("1.0.1")
+    app.setApplicationVersion("1.0.2")
 
     # Load bundled emoji fallback when the system provides no emoji font.
     ensure_emoji_font()

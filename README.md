@@ -26,7 +26,7 @@ The queue accepts `.mp4`, `.mkv`, `.avi`, `.mov`, `.wmv`, `.asf`, `.wm`, `.wma`,
 
 ## Download and quick start
 
-Download the archive from the repository's **Releases** page. On Windows, extract it and run `FreeSimpleVideoConverter.exe`; installation is not required. On Linux (Ubuntu 22.04+ x86_64), extract the `linux-x86_64.tar.gz` archive and run `./FreeSimpleVideoConverter`.
+Download the archive from the repository's **Releases** page. On Windows, extract it and run `FreeSimpleVideoConverter.exe`; installation is not required. On Linux (Ubuntu 22.04+ x86_64), extract the `linux-x86_64.tar.gz` archive and run `./FreeSimpleVideoConverter`, or make the `linux-x86_64.AppImage` executable (`chmod +x`) and run it directly.
 
 Add files or a folder, select a preset and encoder, choose the output location, and start conversion. The queue shows progress for each file; the event log contains conversion details.
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "free-simple-video-converter"
-version = "1.0.1"
+version = "1.0.2"
 description = "Simple GPU-accelerated batch video converter powered by FFmpeg"
 readme = "README.md"
 requires-python = ">=3.11"
