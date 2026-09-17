@@ -46,8 +46,11 @@ from video_converter.ffmpeg_build.source_bundle import (
     validate_source_bundle_zip,
 )
 
-DEFAULT_BUILD_OUTPUT_DIR = Path(r"D:\ffmpeg-v1-output")
-DEFAULT_SOURCE_CACHE_DIR = Path(r"D:\ffmpeg-release-source-cache")
+# Local build/test/release artifacts live in this ignored directory at the
+# repository root instead of being scattered across disks.
+LOCAL_ARTIFACTS_DIR = _REPO_ROOT / ".local-artifacts"
+DEFAULT_BUILD_OUTPUT_DIR = LOCAL_ARTIFACTS_DIR / "ffmpeg-v1-output"
+DEFAULT_SOURCE_CACHE_DIR = LOCAL_ARTIFACTS_DIR / "ffmpeg-release-source-cache"
 SHA256_LINE_PATTERN = re.compile(r"^([0-9a-f]{64}) \*([a-zA-Z0-9._-]+)\n?$")
 SHA256_STRICT_LINE_PATTERN = re.compile(r"^([0-9a-f]{64}) \*([^/\\\s]+\.zip)\n$")
 SHA256_HEX_PATTERN = re.compile(r"^[0-9a-f]{64}$")
@@ -679,13 +682,13 @@ def build_arg_parser() -> argparse.ArgumentParser:
         "--build-output-dir",
         type=Path,
         default=DEFAULT_BUILD_OUTPUT_DIR,
-        help="Path to build output directory (default: D:\\ffmpeg-v1-output).",
+        help="Path to build output directory (default: .local-artifacts/ffmpeg-v1-output).",
     )
     parser.add_argument(
         "--source-cache-dir",
         type=Path,
         default=DEFAULT_SOURCE_CACHE_DIR,
-        help="Path to source cache directory (default: D:\\ffmpeg-release-source-cache).",
+        help="Path to source cache directory (default: .local-artifacts/ffmpeg-release-source-cache).",
     )
     parser.add_argument(
         "--workspace-root",

@@ -55,6 +55,7 @@ coverage.xml
 *~
 
 .worktrees/
+.local-artifacts/
 
 # Local binaries and configs
 bin/*.exe

@@ -4,8 +4,8 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-# Promoted output location (external, outside the repository).
-PROMOTED_OUTPUT_DIR = Path(r"D:\ffmpeg-v1-output")
+# Promoted output location (ignored local directory at the repository root).
+PROMOTED_OUTPUT_DIR = REPO_ROOT / ".local-artifacts" / "ffmpeg-v1-output"
 
 
 def _load_promoted_record() -> dict:

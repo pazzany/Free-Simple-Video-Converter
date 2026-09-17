@@ -12,7 +12,7 @@ This document details the exact obligations, archive contents, and pre-release v
 The bundled Windows x64 binary artifact is documented in `packaging/ffmpeg_release_artifact.txt`:
 - **Artifact**: Local Custom UCRT64 FFmpeg 6.1.1 Static
 - **Build Environment**: MSYS2 MinGW UCRT64 GCC static toolchain
-- **Build Output**: `D:\ffmpeg-v1-output`
+- **Build Output**: `.local-artifacts/ffmpeg-v1-output` (ignored local directory)
 - **FFmpeg Source Tag**: `n6.1.1`
 - **FFmpeg Source Commit**: `e38092ef93`
 - **Binary Checksums**:

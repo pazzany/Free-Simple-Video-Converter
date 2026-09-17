@@ -77,8 +77,8 @@ test_sb._make_dummy_lock_and_inputs = _make_dummy_with_manifest
 def test_cli_parser_defaults():
     parser = pra.build_arg_parser()
     args = parser.parse_args([])
-    assert args.build_output_dir == Path(r"D:\ffmpeg-v1-output")
-    assert args.source_cache_dir == Path(r"D:\ffmpeg-release-source-cache")
+    assert args.build_output_dir == pra.DEFAULT_BUILD_OUTPUT_DIR
+    assert args.source_cache_dir == pra.DEFAULT_SOURCE_CACHE_DIR
     assert args.workspace_root is None
     assert args.dist_dir is None
     assert args.skip_pyinstaller is False

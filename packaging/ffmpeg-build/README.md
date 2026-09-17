@@ -22,7 +22,7 @@ Before resolving the build lock, canonical Git source archives and git bundles m
 python packaging/ffmpeg-build/capture_git_sources.py \
   --manifest packaging/ffmpeg-build/acquisition-manifest.json \
   --cache-dir packaging/ffmpeg-build/artifacts/sources \
-  --retention-dir C:/ffmpeg-build-retention \
+  --retention-dir .local-artifacts/ffmpeg-build-retention \
   --output packaging/ffmpeg-build/artifacts/git-source-evidence.json
 ```
 
