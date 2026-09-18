@@ -190,7 +190,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dist-dir", type=Path, required=True)
     parser.add_argument("--work-dir", type=Path, required=True)
     parser.add_argument("--tools-dir", type=Path, required=True)
-    parser.add_argument("--version", default="1.0.2")
+    parser.add_argument("--version", default="1.0.3")
     args = parser.parse_args(argv)
 
     try:

@@ -58,7 +58,7 @@ REQUIRED_BINARIES = ("ffmpeg.exe", "ffprobe.exe")
 
 # Release version stamped into the Windows application archive name.
 # Bump together with pyproject.toml on every release.
-APP_VERSION = "1.0.2"
+APP_VERSION = "1.0.3"
 APP_DIST_ZIP_NAME = f"FreeSimpleVideoConverter-v{APP_VERSION}-windows-x64.zip"
 
 APP_DIST_DOC_FILES = [
