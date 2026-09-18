@@ -164,7 +164,10 @@ def test_collect_video_files(tmp_path: Path):
     assert dup_files[0] == str(v1.resolve())
 
 
-@pytest.mark.parametrize("extension", [".asf", ".wm", ".wma", ".ASF", ".WmA"])
+@pytest.mark.parametrize(
+    "extension",
+    [".asf", ".wm", ".wma", ".ASF", ".WmA", ".mpg", ".mpeg", ".MPG", ".m2t", ".m2v"],
+)
 def test_collect_video_files_accepts_windows_media_inputs(tmp_path: Path, extension: str):
     source = tmp_path / f"source{extension}"
     source.write_bytes(b"fixture")

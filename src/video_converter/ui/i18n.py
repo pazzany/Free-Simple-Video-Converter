@@ -33,8 +33,8 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "en": "Processing: {completed} of {total} done ({percent:.1f}%)",
     },
     "file_filter": {
-        "ru": "Видеофайлы (*.mp4 *.avi *.mkv *.mov *.wmv *.asf *.wm *.wma *.flv *.webm *.m4v *.ts *.mts);;Все файлы (*.*)",
-        "en": "Video Files (*.mp4 *.avi *.mkv *.mov *.wmv *.asf *.wm *.wma *.flv *.webm *.m4v *.ts *.mts);;All Files (*.*)",
+        "ru": "Видеофайлы (*.mp4 *.mpg *.mpeg *.avi *.mkv *.mov *.wmv *.asf *.wm *.wma *.flv *.webm *.m4v *.ts *.mts *.m2t *.m2v);;Все файлы (*.*)",
+        "en": "Video Files (*.mp4 *.mpg *.mpeg *.avi *.mkv *.mov *.wmv *.asf *.wm *.wma *.flv *.webm *.m4v *.ts *.mts *.m2t *.m2v);;All Files (*.*)",
     },
     "dlg_select_files": {"ru": "Выберите видеофайлы", "en": "Select Video Files"},
     "dlg_select_folder": {"ru": "Выберите папку с видеофайлами", "en": "Select Video Folder"},

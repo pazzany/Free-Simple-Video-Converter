@@ -10,6 +10,8 @@ from video_converter.domain.settings import OutputMode
 SUPPORTED_VIDEO_EXTENSIONS: frozenset[str] = frozenset(
     [
         ".mp4",
+        ".mpg",
+        ".mpeg",
         ".mkv",
         ".avi",
         ".mov",
@@ -23,6 +25,8 @@ SUPPORTED_VIDEO_EXTENSIONS: frozenset[str] = frozenset(
         ".ts",
         ".mts",
         ".m2ts",
+        ".m2t",
+        ".m2v",
         ".3gp",
         ".vob",
         ".ogv",

@@ -22,7 +22,7 @@ Batch video conversion with resolution presets and hardware encoding support.
 
 ## Supported input files
 
-The queue accepts `.mp4`, `.mkv`, `.avi`, `.mov`, `.wmv`, `.asf`, `.wm`, `.wma`, `.flv`, `.webm`, `.m4v`, `.ts`, `.mts`, `.m2ts`, `.3gp`, `.vob`, and `.ogv` files. When a folder is added, matching files are found in its subfolders as well.
+The queue accepts `.mp4`, `.mpg`, `.mpeg`, `.mkv`, `.avi`, `.mov`, `.wmv`, `.asf`, `.wm`, `.wma`, `.flv`, `.webm`, `.m4v`, `.ts`, `.mts`, `.m2ts`, `.m2t`, `.m2v`, `.3gp`, `.vob`, and `.ogv` files. When a folder is added, matching files are found in its subfolders as well.
 
 ## Download and quick start
 
